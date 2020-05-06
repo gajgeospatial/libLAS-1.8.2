@@ -1,0 +1,1367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Debug|Win32">
+      <Configuration>vs2010_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Debug|x64">
+      <Configuration>vs2010_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Release|Win32">
+      <Configuration>vs2010_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2010_Release|x64">
+      <Configuration>vs2010_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Debug|Win32">
+      <Configuration>vs2012_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Debug|x64">
+      <Configuration>vs2012_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Release|Win32">
+      <Configuration>vs2012_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2012_Release|x64">
+      <Configuration>vs2012_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Debug|Win32">
+      <Configuration>vs2015_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Debug|x64">
+      <Configuration>vs2015_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Release|Win32">
+      <Configuration>vs2015_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2015_Release|x64">
+      <Configuration>vs2015_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|Win32">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|Win32">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{114F1861-06E1-4AE8-814B-AA0A3CCC7E50}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>liblas</ProjectName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">liblas</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">liblas</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">liblas</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;gdal_i.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;gdal_i.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;gdal_i.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>gdal_i.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>gdal_i.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>gdal_i.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR)\libgeotiff\libxtiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff;..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc;..\..\..\$(TIFF_DIR)\libtiff;..\..\..\$(TIFF_DIR)\msvc\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Release";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\src\..\include;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\liblas\chipper.hpp" />
+    <ClInclude Include="..\..\include\liblas\exception.hpp" />
+    <ClInclude Include="..\..\include\liblas\export.hpp" />
+    <ClInclude Include="..\..\include\liblas\factory.hpp" />
+    <ClInclude Include="..\..\include\liblas\iterator.hpp" />
+    <ClInclude Include="..\..\include\liblas\bounds.hpp" />
+    <ClInclude Include="..\..\include\liblas\classification.hpp" />
+    <ClInclude Include="..\..\include\liblas\color.hpp" />
+    <ClInclude Include="..\..\include\liblas\dimension.hpp" />
+    <ClInclude Include="..\..\include\liblas\error.hpp" />
+    <ClInclude Include="..\..\include\liblas\filter.hpp" />
+    <ClInclude Include="..\..\include\liblas\header.hpp" />
+    <ClInclude Include="..\..\include\liblas\index.hpp" />
+    <ClInclude Include="..\..\include\liblas\point.hpp" />
+    <ClInclude Include="..\..\include\liblas\reader.hpp" />
+    <ClInclude Include="..\..\include\liblas\schema.hpp" />
+    <ClInclude Include="..\..\include\liblas\spatialreference.hpp" />
+    <ClInclude Include="..\..\include\liblas\transform.hpp" />
+    <ClInclude Include="..\..\include\liblas\variablerecord.hpp" />
+    <ClInclude Include="..\..\include\liblas\writer.hpp" />
+    <ClInclude Include="..\..\include\liblas\liblas.hpp" />
+    <ClInclude Include="..\..\include\liblas\utility.hpp" />
+    <ClInclude Include="..\..\include\liblas\version.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\exceptions.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\id_translator.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\info_parser.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\ini_parser.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\json_parser.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\ptree.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\ptree_fwd.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\ptree_serialization.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\stream_translator.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\string_path.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\xml_parser.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\exception_implementation.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\file_parser_error.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_error.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_read.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_utils.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_write.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_writer_settings.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\json_parser_error.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\json_parser_read.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\json_parser_write.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\ptree_implementation.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\ptree_utils.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\rapidxml.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_error.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_flags.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_read_rapidxml.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_utils.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_write.hpp" />
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_writer_settings.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\binary.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\endian.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\fwd.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\pointrecord.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\timer.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\private_utility.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\singleton.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\zippoint.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\reader\cachedreader.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\reader\reader.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\reader\zipreader.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\reader\header.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\writer\writer.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\writer\zipwriter.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\writer\point.hpp" />
+    <ClInclude Include="..\..\include\liblas\detail\writer\header.hpp" />
+    <ClCompile Include="..\..\src\detail\index\indexcell.cpp" />
+    <ClCompile Include="..\..\src\detail\index\indexoutput.cpp" />
+    <ClCompile Include="..\..\src\chipper.cpp" />
+    <ClCompile Include="..\..\src\factory.cpp" />
+    <ClCompile Include="..\..\src\classification.cpp" />
+    <ClCompile Include="..\..\src\color.cpp" />
+    <ClCompile Include="..\..\src\dimension.cpp" />
+    <ClCompile Include="..\..\src\error.cpp" />
+    <ClCompile Include="..\..\src\filter.cpp" />
+    <ClCompile Include="..\..\src\header.cpp">
+      <ObjectFileName>$(IntDir)/header.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\index.cpp" />
+    <ClCompile Include="..\..\src\point.cpp">
+      <ObjectFileName>$(IntDir)/point.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\reader.cpp">
+      <ObjectFileName>$(IntDir)/reader.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\spatialreference.cpp" />
+    <ClCompile Include="..\..\src\schema.cpp" />
+    <ClCompile Include="..\..\src\transform.cpp" />
+    <ClCompile Include="..\..\src\utility.cpp">
+      <ObjectFileName>$(IntDir)/utility.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\variablerecord.cpp" />
+    <ClCompile Include="..\..\src\writer.cpp">
+      <ObjectFileName>$(IntDir)/writer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\version.cpp" />
+    <ClCompile Include="..\..\src\detail\utility.cpp">
+      <ObjectFileName>$(IntDir)/detail/utility.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\sha1.cpp" />
+    <ClCompile Include="..\..\src\detail\zippoint.cpp" />
+    <ClCompile Include="..\..\src\detail\reader\header.cpp">
+      <ObjectFileName>$(IntDir)/detail/reader/header.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\reader\reader.cpp">
+      <ObjectFileName>$(IntDir)/detail/reader/reader.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\reader\zipreader.cpp" />
+    <ClCompile Include="..\..\src\detail\reader\cachedreader.cpp" />
+    <ClCompile Include="..\..\src\detail\writer\header.cpp">
+      <ObjectFileName>$(IntDir)/detail/writer/header.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\writer\point.cpp">
+      <ObjectFileName>$(IntDir)/detail/writer/point.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\writer\zipwriter.cpp" />
+    <ClCompile Include="..\..\src\detail\writer\writer.cpp">
+      <ObjectFileName>$(IntDir)/detail/writer/writer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gt_citation.cpp" />
+    <ClCompile Include="..\..\src\gt_wkt_srs.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tifvsi.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

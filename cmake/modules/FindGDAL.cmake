@@ -1,262 +1,203 @@
-###############################################################################
-# CMake macro to find GDAL library.
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+#[=======================================================================[.rst:
+FindGDAL
+--------
+
+Find GDAL.
+
+IMPORTED Targets
+^^^^^^^^^^^^^^^^
+
+This module defines :prop_tgt:`IMPORTED` target ``GDAL::GDAL``
+if GDAL has been found.
+
+Result Variables
+^^^^^^^^^^^^^^^^
+
+This module will set the following variables in your project:
+
+``GDAL_FOUND``
+  True if GDAL is found.
+``GDAL_INCLUDE_DIRS``
+  Include directories for GDAL headers.
+``GDAL_LIBRARIES``
+  Libraries to link to GDAL.
+``GDAL_VERSION``
+  The version of GDAL found.
+
+Cache variables
+^^^^^^^^^^^^^^^
+
+The following cache variables may also be set:
+
+``GDAL_LIBRARY``
+  The libgdal library file.
+``GDAL_INCLUDE_DIR``
+  The directory containing ``gdal.h``.
+
+Hints
+^^^^^
+
+Set ``GDAL_DIR`` or ``GDAL_ROOT`` in the environment to specify the
+GDAL installation prefix.
+#]=======================================================================]
+
+# $GDALDIR is an environment variable that would
+# correspond to the ./configure --prefix=$GDAL_DIR
+# used in building gdal.
 #
-# On success, the macro sets the following variables:
-# GDAL_FOUND       = if the library found
-# GDAL_LIBRARY     = full path to the library
-# GDAL_INCLUDE_DIR = where to find the library headers
+# Created by Eric Wing. I'm not a gdal user, but OpenSceneGraph uses it
+# for osgTerrain so I whipped this module together for completeness.
+# I actually don't know the conventions or where files are typically
+# placed in distros.
+# Any real gdal users are encouraged to correct this (but please don't
+# break the OS X framework stuff when doing so which is what usually seems
+# to happen).
+
+# This makes the presumption that you are include gdal.h like
 #
-# On Unix, macro sets also:
-# GDAL_VERSION_STRING = human-readable string containing version of the library
-#
-# Author of original: Magnus Homann (Quantum GIS)
-# Modifications: Mateusz Loskot <mateusz@loskot.net>
-#
-###############################################################################
+#include "gdal.h"
+MESSAGE("Specialized FindGDAL Called")
+if( NOT $ENV{GDAL_LIBRARY} STREQUAL "" )
+    SET(GDAL_LIBRARY $ENV{GDAL_LIBRARY})
+    SET(GDAL_LIBRARIES ${GDAL_LIBRARY})
 
-# Computes the realtionship between two version strings.  A version
-# string is a number delineated by '.'s such as 1.3.2 and 0.99.9.1.
-# You can feed version strings with different number of dot versions,
-# and the shorter version number will be padded with zeros: 9.2 <
-# 9.2.1 will actually compare 9.2.0 < 9.2.1.
-#
-# Input: a_in - value, not variable
-#        b_in - value, not variable
-#        result_out - variable with value:
-#                         -1 : a_in <  b_in
-#                          0 : a_in == b_in
-#                          1 : a_in >  b_in
-#
-# Written by James Bigler.
-MACRO(COMPARE_VERSION_STRINGS a_in b_in result_out)
-  # Since SEPARATE_ARGUMENTS using ' ' as the separation token,
-  # replace '.' with ' ' to allow easy tokenization of the string.
-  STRING(REPLACE "." " " a ${a_in})
-  STRING(REPLACE "." " " b ${b_in})
-  SEPARATE_ARGUMENTS(a)
-  SEPARATE_ARGUMENTS(b)
+    if( NOT $ENV{GDAL_BASE_INCLUDE_DIR} STREQUAL "" )
+	   MESSAGE("Setting all GDAL Include Dirs")
 
-  # Check the size of each list to see if they are equal.
-  LIST(LENGTH a a_length)
-  LIST(LENGTH b b_length)
+   	   SET(GDAL_BASE_INCLUDE_DIR $ENV{GDAL_BASE_INCLUDE_DIR})
+	   MESSAGE("BASE Include Dir ${GDAL_BASE_INCLUDE_DIR}" )
 
-  # Pad the shorter list with zeros.
+	   SET(GDAL_GCORE_INCLUDE_DIR "${GDAL_BASE_INCLUDE_DIR}gcore")
+	   MESSAGE("GCORE Include Dir ${GDAL_GCORE_INCLUDE_DIR}" )
 
-  # Note that range needs to be one less than the length as the for
-  # loop is inclusive (silly CMake).
-  IF(a_length LESS b_length)
-    # a is shorter
-    SET(shorter a)
-    MATH(EXPR range "${b_length} - 1")
-    MATH(EXPR pad_range "${b_length} - ${a_length} - 1")
-  ELSE(a_length LESS b_length)
-    # b is shorter
-    SET(shorter b)
-    MATH(EXPR range "${a_length} - 1")
-    MATH(EXPR pad_range "${a_length} - ${b_length} - 1")
-  ENDIF(a_length LESS b_length)
+	   SET(GDAL_FRMTS_INCLUDE_DIR "${GDAL_BASE_INCLUDE_DIR}frmts")
+	   SET(GDAL_ALG_INCLUDE_DIR "${GDAL_BASE_INCLUDE_DIR}alg")
+	   SET(GDAL_PORT_INCLUDE_DIR "${GDAL_BASE_INCLUDE_DIR}port")
+	   SET(GDAL_OGR_INCLUDE_DIR "${GDAL_BASE_INCLUDE_DIR}ogr")
+	   SET(GDAL_OGRFRMTS_INCLUDE_DIR "${GDAL_BASE_INCLUDE_DIR}ogr/ogrsf_frmts")
+    	   SET(GDAL_INCLUDE_DIR ${GDAL_FRMTS_INCLUDE_DIR} ${GDAL_ALG_INCLUDE_DIR} ${GDAL_GCORE_INCLUDE_DIR} ${GDAL_PORT_INCLUDE_DIR} ${GDAL_OGR_INCLUDE_DIR} ${GDAL_OGRFRMTS_INCLUDE_DIR})
+    else()
+    if( NOT $ENV{GDAL_INCLUDE_DIR} STREQUAL "" )
+       SET(GDAL_INCLUDE_DIR $ENV{GDAL_INCLUDE_DIR})
+    else()
+	  MESSAGE("GDAL_INCLUDE_DIR FUBAR")
+       SET(GDAL_INCLUDE_DIR "GDALIncludeDir")
+    endif()
 
-  # PAD out if we need to
-  IF(NOT pad_range LESS 0)
-    FOREACH(pad RANGE ${pad_range})
-      # Since shorter is an alias for b, we need to get to it by by dereferencing shorter.
-      LIST(APPEND ${shorter} 0)
-    ENDFOREACH(pad RANGE ${pad_range})
-  ENDIF(NOT pad_range LESS 0)
+    endif()
+    SET(GDAL_INCLUDE_DIRS ${GDAL_INCLUDE_DIR})
 
-  SET(result 0)
-  FOREACH(index RANGE ${range})
-    IF(result EQUAL 0)
-      # Only continue to compare things as long as they are equal
-      LIST(GET a ${index} a_version)
-      LIST(GET b ${index} b_version)
-      # LESS
-      IF(a_version LESS b_version)
-        SET(result -1)
-      ENDIF(a_version LESS b_version)
-      # GREATER
-      IF(a_version GREATER b_version)
-        SET(result 1)
-      ENDIF(a_version GREATER b_version)
-    ENDIF(result EQUAL 0)
-  ENDFOREACH(index)
+    mark_as_advanced(GDAL_INCLUDE_DIR GDAL_LIBRARY )
+    SET(GDAL_FOUND TRUE)
+    MESSAGE("FindGDAL Set By Envionment")
 
-  # Copy out the return result
-  SET(${result_out} ${result})
-ENDMACRO(COMPARE_VERSION_STRINGS)
+else()
 
-set (GDAL_VERSION_COUNT 3)
+find_path(GDAL_INCLUDE_DIR gdal.h
+  HINTS
+    ENV GDAL_DIR
+    ENV GDAL_ROOT
+  PATH_SUFFIXES
+     include/gdal
+     include/GDAL
+     include
+)
 
-SET(GDAL_NAMES gdal)
-
-IF(WIN32)
-
-    SET(OSGEO4W_IMPORT_LIBRARY gdal_i)
-    IF(DEFINED ENV{OSGEO4W_ROOT})
-        SET(OSGEO4W_ROOT_DIR $ENV{OSGEO4W_ROOT})
-        #MESSAGE(STATUS " FindGDAL: trying OSGeo4W using environment variable OSGEO4W_ROOT=$ENV{OSGEO4W_ROOT}")
-    ELSE()
-        SET(OSGEO4W_ROOT_DIR c:/OSGeo4W)
-        #MESSAGE(STATUS " FindGDAL: trying OSGeo4W using default location OSGEO4W_ROOT=${OSGEO4W_ROOT_DIR}")
-    ENDIF()
-
-    IF(MINGW)
-        FIND_PATH(GDAL_INCLUDE_DIR
-            gdal.h
-            PATH_PREFIXES gdal gdal-1.6
-            PATHS
-            /usr/local/include
-            /usr/include
-            c:/msys/local/include
-            ${OSGEO4W_ROOT_DIR}/include)
-
-        FIND_LIBRARY(GDAL_LIBRARY
-            NAMES ${GDAL_NAMES}
-            PATH_PREFIXES gdal gdal-1.6
-            PATHS
-            /usr/local/lib
-            /usr/lib
-            c:/msys/local/lib
-            ${OSGEO4W_ROOT_DIR}/lib)
-    ENDIF(MINGW)
-
-    IF(MSVC)
-
-        FIND_PATH(GDAL_INCLUDE_DIR
-            NAMES gdal.h
-            PATH_PREFIXES gdal gdal-1.6
-            PATHS
-            "${OSGEO4W_ROOT_DIR}/apps/gdal-dev/include"
-            "$ENV{LIB_DIR}/include/gdal"
-            ${OSGEO4W_ROOT_DIR}/include)
-
-        SET(GDAL_NAMES ${OSGEO4W_IMPORT_LIBRARY} ${GDAL_NAMES})
-        FIND_LIBRARY(GDAL_LIBRARY
-            NAMES ${GDAL_NAMES}
-            PATH_PREFIXES gdal gdal-1.6
-            PATHS
-            "$ENV{LIB_DIR}/lib"
-            /usr/lib
-            c:/msys/local/lib
-            "${OSGEO4W_ROOT_DIR}/apps/gdal-dev/lib"
-            ${OSGEO4W_ROOT_DIR}/lib)
-
-        IF(GDAL_LIBRARY)
-            SET(GDAL_LIBRARY;odbc32;odbccp32 CACHE STRING INTERNAL)
-        ENDIF()
-    ENDIF(MSVC)
-
-ELSEIF(UNIX)
-
-    # Try to use framework on Mac OS X
-    IF(APPLE)
-        SET(GDAL_MAC_PATH /Library/Frameworks/GDAL.framework/unix/bin)
-    ENDIF()
-
-    # Try to use GDAL_HOME location if specified
-    IF(DEFINED ENV{GDAL_HOME})
-        SET(GDAL_CONFIG_PREFER_PATH
-            "$ENV{GDAL_HOME}/bin" CACHE STRING "Search for gdal-config program in preferred location")
-    ENDIF()
-
-    # Try to use OSGeo4W installation
-    IF(DEFINED ENV{OSGEO4W_HOME})
-        SET(GDAL_CONFIG_PREFER_OSGEO4W_PATH
-            "$ENV{OSGEO4W_HOME}/bin" CACHE STRING "Search for gdal-config program provided by OSGeo4W")
-    ENDIF()
-
-    # Try to use FWTools installation
-    IF(DEFINED ENV{FWTOOLS_HOME})
-        SET(GDAL_CONFIG_PREFER_FWTOOLS_PATH
-            "$ENV{FWTOOLS_HOME}/bin_safe" CACHE STRING "Search for gdal-config program provided by FWTools")
-    ENDIF()
-
-    FIND_PROGRAM(GDAL_CONFIG gdal-config
+if(UNIX)
+    # Use gdal-config to obtain the library version (this should hopefully
+    # allow us to -lgdal1.x.y where x.y are correct version)
+    # For some reason, libgdal development packages do not contain
+    # libgdal.so...
+    find_program(GDAL_CONFIG gdal-config
         HINTS
-        ${GDAL_CONFIG_PREFER_PATH}
-        ${GDAL_CONFIG_PREFER_OSGEO4W_PATH}
-        ${GDAL_CONFIG_PREFER_FWTOOLS_PATH}
-        ${GDAL_MAC_PATH}
-        /usr/local/bin/
-        /usr/bin/)
+          ENV GDAL_DIR
+          ENV GDAL_ROOT
+        PATH_SUFFIXES bin
+    )
 
-    IF(GDAL_CONFIG)
+    if(GDAL_CONFIG)
+        exec_program(${GDAL_CONFIG} ARGS --libs OUTPUT_VARIABLE GDAL_CONFIG_LIBS)
 
-        # TODO: Replace the regex hacks with CMake version comparison feature:
-        # if(version1 VERSION_LESS version2)
+        if(GDAL_CONFIG_LIBS)
+            # treat the output as a command line and split it up
+            separate_arguments(args NATIVE_COMMAND "${GDAL_CONFIG_LIBS}")
 
-        # Extract GDAL version
-        EXEC_PROGRAM(${GDAL_CONFIG} ARGS --version OUTPUT_VARIABLE GDAL_VERSION_STATED)
-        SET(GDAL_VERSION_STRING "${GDAL_VERSION_STATED}" CACHE STRING "Version of GDAL package found")
+            # only consider libraries whose name matches this pattern
+            set(name_pattern "[gG][dD][aA][lL]")
 
-        STRING(REGEX REPLACE "([0-9]+)\\.([0-9]+)\\.([0-9]+)" "\\1" GDAL_VERSION_MAJOR "${GDAL_VERSION_STATED}")
-        STRING(REGEX REPLACE "([0-9]+)\\.(/^\\d{1,2}$/)\\.([0-9]+)" "\\2" GDAL_VERSION_MINOR "${GDAL_VERSION_STATED}")
-        STRING(REGEX REPLACE "([0-9]+)\\.([0-9]+)\\.([0-9]+)" "\\3" GDAL_VERSION_PATCH "${GDAL_VERSION_STATED}")
+            # consider each entry as a possible library path, name, or parent directory
+            foreach(arg IN LISTS args)
+                # library name
+                if("${arg}" MATCHES "^-l(.*)$")
+                    set(lib "${CMAKE_MATCH_1}")
 
-        # Check for GDAL version
-        if (GDAL_FIND_VERSION)
-            COMPARE_VERSION_STRINGS( "${GDAL_VERSION_STATED}" "${GDAL_FIND_VERSION}" version_result)
-            IF (version_result LESS 0)
-                MESSAGE (FATAL_ERROR "GDAL version is too old (${GDAL_VERSION_STATED}). Use ${GDAL_FIND_VERSION} or higher requested.")
-            ENDIF()
-            set (GDAL_VERSION_STRING ${GDAL_VERSION_STATED})
-            set (GDAL_VERSION_COMPATIBLE true)
+                    # only consider libraries whose name matches the expected pattern
+                    if("${lib}" MATCHES "${name_pattern}")
+                        list(APPEND _gdal_lib "${lib}")
+                    endif()
+                # library search path
+                elseif("${arg}" MATCHES "^-L(.*)$")
+                    list(APPEND _gdal_libpath "${CMAKE_MATCH_1}")
+                # assume this is a full path to a library
+                elseif(IS_ABSOLUTE "${arg}" AND EXISTS "${arg}")
+                    # extract the file name
+                    get_filename_component(lib "${arg}" NAME)
+
+                    # only consider libraries whose name matches the expected pattern
+                    if(NOT "${lib}" MATCHES "${name_pattern}")
+                        continue()
+                    endif()
+
+                    # extract the file directory
+                    get_filename_component(dir "${arg}" DIRECTORY)
+
+                    # remove library prefixes/suffixes
+                    string(REGEX REPLACE "^(${CMAKE_SHARED_LIBRARY_PREFIX}|${CMAKE_STATIC_LIBRARY_PREFIX})" "" lib "${lib}")
+                    string(REGEX REPLACE "(${CMAKE_SHARED_LIBRARY_SUFFIX}|${CMAKE_STATIC_LIBRARY_SUFFIX})$" "" lib "${lib}")
+
+                    # use the file name and directory as hints
+                    list(APPEND _gdal_libpath "${dir}")
+                    list(APPEND _gdal_lib "${lib}")
+                endif()
+            endforeach()
         endif()
+    endif()
+endif()
 
-        set (GDAL_FOUND TRUE)
-        # Set INCLUDE_DIR to prefix+include
-        EXEC_PROGRAM(${GDAL_CONFIG} ARGS --prefix OUTPUT_VARIABLE GDAL_PREFIX)
+find_library(GDAL_LIBRARY
+  NAMES ${_gdal_lib} gdal gdal_i gdal1.5.0 gdal1.4.0 gdal1.3.2 GDAL
+  HINTS
+     ENV GDAL_DIR
+     ENV GDAL_ROOT
+     ${_gdal_libpath}
+  PATH_SUFFIXES lib
+)
 
-        FIND_PATH(GDAL_INCLUDE_DIR
-            gdal.h
-            PATH_PREFIXES gdal
-            HINTS
-            ${GDAL_PREFIX}/include/gdal
-            ${GDAL_PREFIX}/include
-            /usr/local/include
-            /usr/include)
+if (EXISTS "${GDAL_INCLUDE_DIR}/gdal_version.h")
+    file(STRINGS "${GDAL_INCLUDE_DIR}/gdal_version.h" _gdal_version
+        REGEX "GDAL_RELEASE_NAME")
+    string(REGEX REPLACE ".*\"\(.*\)\"" "\\1" GDAL_VERSION "${_gdal_version}")
+    unset(_gdal_version)
+else ()
+    set(GDAL_VERSION GDAL_VERSION-NOTFOUND)
+endif ()
 
-        # Extract link dirs for rpath
-        EXEC_PROGRAM(${GDAL_CONFIG} ARGS --libs OUTPUT_VARIABLE GDAL_CONFIG_LIBS)
+include(${CMAKE_CURRENT_LIST_DIR}/FindPackageHandleStandardArgs.cmake)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(GDAL
+    VERSION_VAR GDAL_VERSION
+    REQUIRED_VARS GDAL_LIBRARY GDAL_INCLUDE_DIR)
 
-        # Split off the link dirs (for rpath)
-        # Use regular expression to match wildcard equivalent "-L*<endchar>"
-        # with <endchar> is a space or a semicolon
-        STRING(REGEX MATCHALL "[-][L]([^ ;])+" GDAL_LINK_DIRECTORIES_WITH_PREFIX "${GDAL_CONFIG_LIBS}")
-        #MESSAGE("DBG GDAL_LINK_DIRECTORIES_WITH_PREFIX=${GDAL_LINK_DIRECTORIES_WITH_PREFIX}")
+if (GDAL_FOUND AND NOT TARGET GDAL::GDAL)
+    add_library(GDAL::GDAL UNKNOWN IMPORTED)
+    set_target_properties(GDAL::GDAL PROPERTIES
+        IMPORTED_LOCATION "${GDAL_LIBRARY}"
+        INTERFACE_INCLUDE_DIRECTORIES "${GDAL_INCLUDE_DIR}")
+endif ()
 
-        # Remove prefix -L because we need the pure directory for LINK_DIRECTORIES
-        IF(GDAL_LINK_DIRECTORIES_WITH_PREFIX)
-            STRING(REGEX REPLACE "[-][L]" "" GDAL_LINK_DIRECTORIES "${GDAL_LINK_DIRECTORIES_WITH_PREFIX}" )
-            #MESSAGE("DBG GDAL_LINK_DIRECTORIES ${GDAL_LINK_DIRECTORIES}")
-        ENDIF()
+set(GDAL_LIBRARIES ${GDAL_LIBRARY})
+set(GDAL_INCLUDE_DIRS ${GDAL_INCLUDE_DIR})
 
-        # Split off the name
-        # use regular expression to match wildcard equivalent "-l*<endchar>"
-        # with <endchar> is a space or a semicolon
-        STRING(REGEX MATCHALL "[-][l]([^ ;])+" GDAL_LIB_NAME_WITH_PREFIX "${GDAL_CONFIG_LIBS}")
-
-        # Remove prefix -l because we need the pure name
-        IF(GDAL_LIB_NAME_WITH_PREFIX)
-            STRING(REGEX REPLACE "[-][l]" "" GDAL_LIB_NAME ${GDAL_LIB_NAME_WITH_PREFIX})
-        ENDIF()
-
-        IF(APPLE)
-            SET(GDAL_LIBRARY ${GDAL_LINK_DIRECTORIES}/lib${GDAL_LIB_NAME}.dylib CACHE STRING INTERNAL)
-        ELSE()
-            SET(GDAL_LIBRARY ${GDAL_LINK_DIRECTORIES}/lib${GDAL_LIB_NAME}.so CACHE STRING INTERNAL)
-        ENDIF()
-
-    ELSE()
-        MESSAGE("FindGDAL.cmake: gdal-config not found. Please set it manually: GDAL_CONFIG=${GDAL_CONFIG}")
-    ENDIF(GDAL_CONFIG)
-
-ELSE()
-    MESSAGE("FindGDAL.cmake: unrecognized or unsupported operating system (use Unix or Windows)")
-ENDIF()
-
-# Handle the QUIETLY and REQUIRED arguments and set GDAL_FOUND to TRUE
-# if all listed variables are TRUE
-INCLUDE(FindPackageHandleStandardArgs)
-FIND_PACKAGE_HANDLE_STANDARD_ARGS(GDAL DEFAULT_MSG GDAL_LIBRARY GDAL_INCLUDE_DIR)
-
+endif()

@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\detail\index\indexcell.cpp">
+      <Filter>Source Files\detail\index</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\index\indexoutput.cpp">
+      <Filter>Source Files\detail\index</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\chipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\classification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\color.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dimension.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\index.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\point.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\spatialreference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\schema.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\variablerecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\writer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\utility.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\sha1.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\zippoint.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\reader\header.cpp">
+      <Filter>Source Files\detail\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\reader\reader.cpp">
+      <Filter>Source Files\detail\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\reader\zipreader.cpp">
+      <Filter>Source Files\detail\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\reader\cachedreader.cpp">
+      <Filter>Source Files\detail\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\writer\header.cpp">
+      <Filter>Source Files\detail\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\writer\point.cpp">
+      <Filter>Source Files\detail\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\writer\zipwriter.cpp">
+      <Filter>Source Files\detail\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\detail\writer\writer.cpp">
+      <Filter>Source Files\detail\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gt_citation.cpp">
+      <Filter>Source Files\gdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gt_wkt_srs.cpp">
+      <Filter>Source Files\gdal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tifvsi.cpp">
+      <Filter>Source Files\gdal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\liblas\chipper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\exception.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\export.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\iterator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\bounds.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\classification.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\color.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\dimension.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\error.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\filter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\header.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\index.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\point.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\reader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\schema.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\spatialreference.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\transform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\variablerecord.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\writer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\liblas.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\exceptions.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\id_translator.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\info_parser.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\ini_parser.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\json_parser.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\ptree.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\ptree_fwd.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\ptree_serialization.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\stream_translator.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\string_path.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\xml_parser.hpp">
+      <Filter>Header Files\external\property_tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\exception_implementation.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\file_parser_error.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_error.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_read.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_utils.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_write.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\info_parser_writer_settings.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\json_parser_error.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\json_parser_read.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\json_parser_write.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\ptree_implementation.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\ptree_utils.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\rapidxml.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_error.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_flags.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_read_rapidxml.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_utils.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_write.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\external\property_tree\detail\xml_parser_writer_settings.hpp">
+      <Filter>Header Files\external\property_tree\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\binary.hpp">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\endian.hpp">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\fwd.hpp">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\pointrecord.hpp">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\timer.hpp">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\private_utility.hpp">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\singleton.hpp">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\zippoint.hpp">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\reader\cachedreader.hpp">
+      <Filter>Header Files\detail\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\reader\reader.hpp">
+      <Filter>Header Files\detail\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\reader\zipreader.hpp">
+      <Filter>Header Files\detail\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\reader\header.hpp">
+      <Filter>Header Files\detail\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\writer\writer.hpp">
+      <Filter>Header Files\detail\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\writer\zipwriter.hpp">
+      <Filter>Header Files\detail\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\writer\point.hpp">
+      <Filter>Header Files\detail\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\liblas\detail\writer\header.hpp">
+      <Filter>Header Files\detail\writer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files\external">
+      <UniqueIdentifier>{BED84B77-A600-4FF7-8C77-25FF3C517D3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\detail">
+      <UniqueIdentifier>{B2E47BD6-86ED-445B-A975-312D57C48BD0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detail">
+      <UniqueIdentifier>{087E2152-7288-463E-8D5E-146CF6993DBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gdal">
+      <UniqueIdentifier>{FF52E45B-462A-4FC3-BE15-53CD89192E5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\detail\reader">
+      <UniqueIdentifier>{A41BEAE9-6821-4449-B356-3AF3D70CA964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\detail\writer">
+      <UniqueIdentifier>{738239B8-408F-4B77-80D0-06807DBD7D95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detail\index">
+      <UniqueIdentifier>{F5F9686E-EBA9-474A-844B-29FA8B950D9A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detail\reader">
+      <UniqueIdentifier>{7FF5A989-E8DF-4C99-88B0-A84AB7492A0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detail\writer">
+      <UniqueIdentifier>{64ED16AC-0988-4B49-BC8A-1BF34BD0C5D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\external\property_tree">
+      <UniqueIdentifier>{C30E36C5-C764-474C-8D43-D44409BCF334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\external\property_tree\detail">
+      <UniqueIdentifier>{86BBF729-2D13-4B36-BC5B-2F89864EEA38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{26973738-84B2-4696-B1B0-E91188FBC009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{259DACB0-0C39-4219-8906-2FBAB76B4D5C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Files">
+      <UniqueIdentifier>{98A487DD-CC7B-48DA-B029-BEAC965E5E5D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
