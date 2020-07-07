@@ -81,6 +81,22 @@
       <Configuration>vs2017_Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|Win32">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|Win32">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGUID>{2BEF598A-B271-4145-AAE2-9637594F5864}</ProjectGUID>
@@ -110,6 +126,12 @@
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -141,6 +163,12 @@
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
@@ -170,6 +198,12 @@
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -201,6 +235,12 @@
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
@@ -225,121 +265,145 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">bigfile_boost_iostreams_test</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">bigfile_boost_iostreams_test</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">bigfile_boost_iostreams_test</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">bigfile_boost_iostreams_test</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">bigfile_boost_iostreams_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">.exe</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|Win32'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2015_Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">true</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2010_Release|x64'">true</GenerateManifest>
   </PropertyGroup>
@@ -432,6 +496,50 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;liblas.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)bigfile_boost_iostreams_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
@@ -695,6 +803,50 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;liblas.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)bigfile_boost_iostreams_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
@@ -915,6 +1067,50 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;liblas.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)bigfile_boost_iostreams_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
@@ -1092,6 +1288,50 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;liblas.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)bigfile_boost_iostreams_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\apps\.;..\..\apps\..\include;..\..\apps\..\include\liblas\capi;$(BOOST_DIR);..\..\..\$(LASZIP_DIR)\include;..\..\..\$(GDAL_DIR)\frmts;..\..\..\$(GDAL_DIR)\alg;..\..\..\$(GDAL_DIR)\gcore;..\..\..\$(GDAL_DIR)\port;..\..\..\$(GDAL_DIR)\ogr;..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\$(GEOTIFF_DIR);..\..\..\$(TIFF_DIR)\libtiff;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
