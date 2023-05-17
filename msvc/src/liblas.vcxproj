@@ -889,7 +889,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_LASZIP=1;HAVE_GDAL=1;HAVE_LIBGEOTIFF=1;LAS_DLL_EXPORT=1;LASZIP_DLL_IMPORT=1;CMAKE_INTDIR="Debug";liblas_EXPORTS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
@@ -907,17 +907,23 @@
     <Link>
       <AdditionalOptions> /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>gdal_i.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-gd-$(BOOST_VER).lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
+      <ForceFileOutput>Enabled</ForceFileOutput>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
+    <PostBuildEvent>
+      <Command>if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)
+if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).pdb $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Debug|x64'">
     <ClCompile>
@@ -1523,7 +1529,7 @@
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;libtiff_i.lib;geotiff_i.lib;gdal_i.lib;laszip.lib;libboost_program_options-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_thread-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_system-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_iostreams-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-$(BOOST_VER).lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\$(TIFF_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GEOTIFF_DIR)\libgeotiff\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\$(LASZIP_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(BOOST_DIR)\stage\$(Platform)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>$(OutDir)liblas.lib</ImportLibrary>
       <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
@@ -1534,6 +1540,11 @@
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
+    <PostBuildEvent>
+      <Command>if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)
+if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\bin   copy /y $(OutDir)$(TargetName).dll $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\bin
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2012_Release|x64'">
     <ClCompile>
