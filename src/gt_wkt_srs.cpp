@@ -99,8 +99,24 @@ static void* hMutex = NULL;
 void LibgeotiffOneTimeInit()
 {
     static int bOneTimeInitDone = FALSE;
-    CPLMutexHolder oHolder( &hMutex);
 
+#ifdef _DEBUG
+    //GAJ
+    //GDAL 3.6.4 cmake build of GDAL not correctly exporting CPLMutex holder in debug conf. Just get the mutex since the MutexHolder is discared in any case
+    //Should probably just do the same thing for release but this resolves linking error for now
+    double dfWaitInSeconds = 1000.0;
+    const char* pszFile = __FILE__;
+    int nLine = __LINE__;
+    int nOptions = CPL_MUTEX_RECURSIVE;
+    if (!CPLCreateOrAcquireMutexEx(&hMutex, dfWaitInSeconds, nOptions))
+    {
+        CPLError(CE_Warning, CPLE_AppDefined, "CPLCreateOrAcquireMutexEx: Failed to acquire mutex!");
+    }
+
+//    CPLMutexHolder oHolder(&hMutex);
+#else
+    CPLMutexHolder oHolder( &hMutex);
+#endif
     if (bOneTimeInitDone)
         return;
 
